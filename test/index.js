@@ -1,7 +1,7 @@
 'use strict';
 
 var assert = require('assert');
-var errorableAdmin = require('../lib');
+var errorableUser = require('../lib');
 var errorable = require('errorable');
 var Generator = errorable.Generator;
 var cnErrors = new Generator(errorableUser, 'zh-CN').errors;
@@ -22,9 +22,6 @@ describe('errorable-admin', function () {
     var errors = {
       UserNotFound: '用户未找到！',
       UserNotLoggedIn: '用户未登录！',
-      UserExisted: '用户已经存在！',
-      UserNotFound: '用户未找到！',
-      UserNotLoggedIn: '用户未登录！',
       UserExisted: '用户已经存在！'
     };
     console.log(errors);
@@ -40,9 +37,6 @@ describe('errorable-admin', function () {
   it('should have administrator errors in en-US!', function () {
     var count = 0;
     var errors = {
-      UserNotFound: 'User Not Found!',
-      UserNotLoggedIn: 'User Not Logged In!',
-      UserExisted: 'User Existed!',
       UserNotFound: 'User Not Found!',
       UserNotLoggedIn: 'User Not Logged In!',
       UserExisted: 'User Existed!'
