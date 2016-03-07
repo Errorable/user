@@ -35,7 +35,7 @@
       "mocha": true
     }
   },
-  "repository": "calidion/errorable-user",
+  "repository": "Errorable/user",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"
